@@ -41,7 +41,8 @@ a {
     display: flex; 
     align-items: center; 
     justify-content: center;
-    width: max-content;
+    width: 100%;
+    max-width: 700px;
     padding: 30px;
     gap: 20px;
     border-radius: 8px;
@@ -101,6 +102,7 @@ button:active {
 
     #main {
         flex-direction: column;
+        padding: 15px;
     }
 }
 
