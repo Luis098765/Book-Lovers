@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Book Lovers</title>
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <Header>
+            Book Lovers
+        </Header>
+
+        <div class="container">
+            <input id="inputLivro" type="text" placeholder="Busque por um livro aqui" oninput="buscarLivro()">
+            
+            <div id="books-container"></div>
+
+            <div style="display: flex; justify-content: center; gap: 30px;">
+                <button class="btVoltar">
+                    <a href="index.html">Voltar à página inicial</a>
+                </button>
+    
+                <button class="btVoltar">
+                    <a href="recomen.html">Buscar recomendações</a>
+                </button>
+            </div>
+        </div>
+        
+        <br>
+
+        <script src="../acervo.js"></script>
+    </body>
+</html>

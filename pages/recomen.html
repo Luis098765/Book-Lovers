@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    
+    <body>
+        <Header>
+            Book Lovers
+        </Header>
+        
+        <div class="container">
+            <h2>Escolha seus gêneros literários favoritos e recomendaremos livros com base no seu gosto</h2>
+            
+            <div class="container-form">
+                <form id="form-generos">
+                    <div class="gridGeneros">
+                        <!--<div class="item-genero"><div class="btGenero" data-value="Fantasia">Fantasia</div></div>-->
+                    </div>
+
+                    <button type="button" id="btEnviar" onclick="recomendarMelhores()">Enviar</button>
+                </form>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                <button class="btVoltar">
+                    <a href="index.html">Voltar à página inicial</a>
+                </button>
+    
+                <button class="btVoltar">
+                    <a href="acervo.html">Vizualizar acervo</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2></h2>
+
+            <div id="books-container"></div>
+        </div>
+
+        <br>
+
+        <script src="../recommendation.js"></script>
+    </body>
+</html>

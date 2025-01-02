@@ -1,0 +1,245 @@
+body {
+    background-color: #F0E4B0;
+    align-content: center;   
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    font-family: Arial;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #F0E4B0;
+    margin-top: 20px;
+}
+
+img {
+    width: 450px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.25s;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#main {
+    margin: auto;
+    background-color: #9E7352;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: max-content;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.25s;
+}
+
+#main:hover {
+    scale: 1.025;
+}
+
+button {
+    font-size: 18px;
+    font-family: Arial;
+    width: 170px;
+    border-radius: 25px;
+    background-color: #F0E4B0;
+    padding: 10px;
+    transition: 250ms;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+}
+
+button img {
+    width: 150px;
+    height: 150px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: #83a9b6; 
+    scale: 1.05;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: burlywood; 
+}
+
+@media screen and (max-width: 750px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 40%;
+        height: 50%;
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    img {
+        width: 300px;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+}
+
+.container {
+    background-color: #9E7352;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px black;
+    width: calc(100% - 40px);
+}
+
+.container h2 {
+    color: white;
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 18px;
+    text-align: center;
+}
+
+input {
+    width: calc(100% - 40px);
+    margin: auto;
+    display: block;
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: antiquewhite;
+    font-size: 16px;
+    transition: 0.25s;
+    outline: 0;
+}
+
+input:focus {
+    scale: 1.01;
+    border: 2px solid #ccc;
+}
+
+#books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.livro {
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    transition: 0.25s;
+    text-align: center;
+}
+
+.livro img {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.livro p {
+    margin: 0;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.livro:hover {
+    scale: 1.05;
+}
+
+.btVoltar {
+    display: block;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.container-form {
+    background-color: #F0E4B0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 1600px;
+}
+
+.gridGeneros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.item-genero {
+    display: flex;
+    justify-content: center;
+}
+
+.btGenero {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F0E4B0;
+    color: #9E7352;
+    font-size: 15px;
+    font-family: Arial;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #9E7352;
+    width: 150px;
+    height: 20px;
+}
+
+.btGenero:hover {
+    scale: 1.1;
+    background-color: #83a9b6;
+    border-color: #83a9b6;
+    color: white;
+}
+
+.btGenero.selected {
+    color: white;
+    border-color: #9E7352;
+    background-color: #9E7352;
+}
+
+#btEnviar {
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #9E7352;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    box-shadow: none;
+}
+
+#btEnviar:hover {
+    background-color: #83a9b6;
+}
