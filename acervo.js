@@ -24,7 +24,7 @@ function mostrarLivros() {
         div.innerHTML = `
             <img src="${livro.image}" alt="${livro.nome}">
             <p>${livro.nome}</p>
-            <b>Autor: </b>${livro.autor}<br>
+            <b>Autor(a): </b>${livro.autor}<br>
             <b>Gêneros: </b>${livro.generos.join(", ")}
         `;
 

@@ -2,7 +2,7 @@ let livros = []
 const generos = [
     "Aventura", "Autobiografia", "Clássico", "Comédia", "Comédia Romântica", "Conto", "Ciência", "Contemporâneo", "Drama", "Distopia", "Educação", "Épico",
     "Fábula", "Fantasia", "Ficção científica", "Filosofia", "Horror", "Infantil", "Infanto-juvenil", "Jovem adulto", "Magia", "Mistério", "Novela", "Policial", 
-    "Romance", "Sátira", "Satírico", "Suspense", "Terror", "Tragédia", "Vampirismo"
+    "Romance", "Sátira", "Suspense", "Terror", "Tragédia", "Vampirismo"
 ];
 const btsGeneros = document.querySelectorAll('.btGenero');
 const generosSelecionados = new Set();
@@ -81,4 +81,15 @@ function recomendarMelhores() {
     
         booksContainer.appendChild(div);
     });    
+}
+
+function limparRecomendaçoes() {
+    booksContainer.innerHTML = ""
+    document.querySelector(".container:last-of-type h2").innerHTML = ""
+
+    document.querySelectorAll('.btGenero').forEach(botao => {
+        botao.classList.remove('selected');
+    });
+    
+    generosSelecionados.clear();
 }

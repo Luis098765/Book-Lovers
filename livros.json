@@ -78,5 +78,6 @@
     { "nome": "O Cemitério", "autor": "Stephen King", "generos": ["Terror", "Suspense", "Horror"], "image": "../images/books/oCemiterio.jpg", "pontuacao": 0 },
     { "nome": "A Maldição do Mar", "autor": "Shea Ernshaw", "generos": ["Terror", "Fantasia", "Horror"], "image": "../images/books/aMaldiçaoDoMar.jpg", "pontuacao": 0 },
     { "nome": "Diários do Vampiro", "autor": "L.J. Smith", "generos": ["Terror", "Fantasia", "Vampirismo"], "image": "../images/books/diariosDoVampiro.jpg", "pontuacao": 0 },
-    { "nome": "O Hobbit", "autor": "J.R.R. Tolkien", "generos": ["Romance", "Fantasia", "Infantil", "Épico"], "image": "../images/books/oHobbit.jpg", "pontuacao": 0 }
+    { "nome": "O Hobbit", "autor": "J.R.R. Tolkien", "generos": ["Romance", "Fantasia", "Infantil", "Épico"], "image": "../images/books/oHobbit.jpg", "pontuacao": 0 },
+    { "nome": "O Mundo de Sofia", "autor": "Jostein Gaarder", "generos": ["Romance", "Filosofia"], "image": "../images/books/oMundoDeSofia.jpg", "pontuacao": 0 }
 ]
