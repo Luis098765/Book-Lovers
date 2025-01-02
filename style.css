@@ -103,6 +103,7 @@ button:active {
     #main {
         flex-direction: column;
         padding: 15px;
+        width: calc(100% - 40px);
     }
 }
 
