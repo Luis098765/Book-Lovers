@@ -246,3 +246,13 @@ input:focus {
 #btEnviar:hover {
     background-color: #83a9b6;
 }
+
+.bts {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    min-width: 180px;
+    width: max-content;
+}
